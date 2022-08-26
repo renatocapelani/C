@@ -1,15 +1,28 @@
-Teste 001
-git --version
-git config --global user.name "renatocapelani"
-git config --global user.email "renato.capelani@hotmail.com"
-git commit -m "Primeiro Commit"
-git init
-git add index.php
-git commit -m "Primeiro Commit"
-echo "# PHP" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/renatocapelani/PHP.git
-git push -u origin main
+#include <stdio.h>
+
+void main(){
+int valora=0, valorb=0, total=0, contador=0;
+
+printf("Informe o valor para realizar a tabuada: ");
+scanf("%d", &valora);
+
+
+    for(valorb=0;valorb<=10;valorb++){
+    
+    //while(valorb<=10){
+        
+        total=valora*valorb;
+        printf("%d X %d = %d\n", valora, valorb, total);
+       
+       // valorb++;
+    }
+
+/*
+    do{
+            total=valora*valorb;
+            printf("%d X %d = %d\n", valora, valorb, total);
+        valorb++;
+    }while(valorb<=10);
+*/
+
+}
